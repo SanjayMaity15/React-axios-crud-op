@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: rgb(27, 27, 55);
+  color: whitesmoke;
+}
+
+.card{
+  background-color: rgb(56, 56, 107);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.4rem;
+
+  & p:first-of-type{
+    color: yellow;
+  }
+
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+
+}
+
+button{
+  padding: 0.6rem 3rem;
+  border: none;
+  color: whitesmoke;
+}
+
+.two-btn{
+
+  display: flex;
+  gap: 2rem;
+
+  & button:first-child{
+    background-color: red;
+  }
+
+  & button:last-child{
+    background-color: green;
+  }
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 2rem;
+  
+}
+
+input{
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+
+}
+
+::placeholder{
+  color: #212121;
+}
+
+.submit{
+  background-color: green;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+}
+
